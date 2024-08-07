@@ -64,3 +64,13 @@
     color: #cc6600;
     font-weight: bold;
 }
+
+@media (max-width:800px){
+    .informacion-dashboard{
+        width: 100%;
+    }
+    .calendario{
+        width: 100%;
+        
+    }
+}
