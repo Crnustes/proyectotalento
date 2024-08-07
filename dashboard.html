@@ -7,40 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 
     <style>
-        .content-area-dashboard{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
-        }
-        .informacion-dashboard{
-            display: flex;
-            justify-content: center;
-            width: 75%;
-            flex-wrap: wrap;
-        }
-        .caja-info{
-            width: 250px;
-            background: #0C1247;
-            margin: 10px;
-            color: #ffffff;
-            padding: 30px;
-            border-radius: 15px;
         
-        }
-        .caja-info i{
-            font-size: 80px;
-            margin: 10px ;
-        }
-        .caja-info a{
-            color: #ffffff;
-        }
-        .calendario{
-            width: 23%;
-            background-color: aqua;
-        }
     </style>
 </head>
 <body>
@@ -100,7 +70,32 @@
         </div>
         <div class="calendario">
             <h3>Calendario</h3>
-            aca va el calendario 
+            <div class="calendar">
+                <div class="day day-header">Dom</div>
+                <div class="day day-header">Lun</div>
+                <div class="day day-header">Mar</div>
+                <div class="day day-header">Mié</div>
+                <div class="day day-header">Jue</div>
+                <div class="day day-header">Vie</div>
+                <div class="day day-header">Sáb</div>
+                
+                <!-- Ejemplo de un mes -->
+                <div class="day"></div>
+                <div class="day">1</div>
+                <div class="day past-class">2<br><a href="#clase-pasada">Ver clase</a></div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day past-class">5<br><a href="#clase-pasada">Ver clase</a></div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day future-class">9<br><span>Próxima clase</span></div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day future-class">12<br><span>Próxima clase</span></div>
+                <div class="day">13</div>
+                <!-- Continúa con el resto de los días del mes -->
+            </div>
         </div>
     </div>
         

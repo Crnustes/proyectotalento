@@ -6,7 +6,7 @@ body {
     grid-template-areas: 
         "top-menu top-menu"
         "side-menu content";
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 180px 1fr;
     grid-template-rows: 60px 1fr;
     height: 100vh;
 }
