@@ -6,7 +6,8 @@
     <title>Estudiantes</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/formestudiante.css">
 </head>
 <body>
     <nav id="top-menu">
@@ -27,8 +28,41 @@
     </nav>
     
     <main id="content-area">
-        <h1>Área de trabajo</h1>
-        <p>Acá es donde tienen que trabajar su código ya que esto lo vamos a trabajar diferentes personas para cada una de las páginas</p>
+        <form>
+            <h1>Registro de Estudiante</h1>
+            <div>
+                <input type="text", name="nombrestudiante", id="nombrestudiante", placeholder="Digite el nombre">
+            </div>
+            <div>
+                <input type="text", name="apellidosestudiante", id="apellidosestudiante", placeholder="Digite los apellidos">
+            </div>  
+            <div>
+                <select name="tipodocumento", id="tipodocumento">
+                    <option value="seleccion">Seleccione el tipo de documento</option>
+                    <option value="tarjeteidentidad">Tarjeta de Identidad</option>
+                    <option value="cedula">Cedula de Ciudadanía</option>
+                </select>
+            </div>
+            <div>
+                <input type="number", name="tdocumento", id="documento", placeholder="Digite el numero del documento">
+            </div>    
+            <div>
+                <select name="sexo", id="sexo">
+                    <option value="seleccion">Seleccione el sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </div>    
+            <div>
+                <input type="number", name="numcelular", id="celular", placeholder="Digite el numero del celular">
+            </div>    
+            <div>
+                <input type="email", name="correoelectronico", id="correo", placeholder="Digitele el correo electronico">
+            </div>
+            <div>
+                <button class="Registrar" type="submit" id="registro">Registrar</button>
+            </div>
+        </form>
     </main>
 
 
