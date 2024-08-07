@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (username === 'adm' && password === '1234') {
             window.location.href = './dashboard';
+            window.location.href = './dashboard.html';
         } else {
             alert('Usuario o contraseña incorrectos.');
         }
