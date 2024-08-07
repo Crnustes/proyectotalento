@@ -7,6 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/menu.css">
+
+    <style>
+        .content-area-dashboard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+        .informacion-dashboard{
+            display: flex;
+            justify-content: center;
+            width: 75%;
+            flex-wrap: wrap;
+        }
+        .caja-info{
+            width: 250px;
+            background: #0C1247;
+            margin: 10px;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+        
+        }
+        .caja-info a{
+            color: #ffffff;
+        }
+        .calendario{
+            width: 23%;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <nav id="top-menu">
@@ -26,9 +57,49 @@
         </ul>
     </nav>
     
-    <main id="content-area">
-        <h1>Área de trabajo</h1>
-        <p>Acá es donde tienen que trabajar su código ya que esto lo vamos a trabajar diferentes personas para cada una de las páginas</p>
+    <main id="content-area" >
+        
+        <h1>Bienvenidos</h1>
+        <div class="content-area-dashboard">
+        <div class="informacion-dashboard">
+            <div class="caja-info">
+                <h3>ESTUDIANTES</h3>
+                <img src="" alt="">
+                <a href="estudiantes.html" class="caja-acceso"> Agregar estudiantes</a>
+            </div>
+            <div class="caja-info">
+                <h3>CALIFICACIONES</h3>
+                <img src="" alt="">
+                <a href="calificaciones.html" class="caja-acceso">agregar calificaciones</a>
+            </div>
+            <div class="caja-info">
+                <h3>SESIONES</h3>
+                <img src="" alt="">
+                <a href="sesiones.html" class="caja-acceso">Agregar sesiones</a>
+            </div>
+            <div class="caja-info">
+                <h3>CONTENIDO</h3>
+                <img src="" alt="">
+                <a href="contenido.html" class="caja-acceso">Agregar contenido</a>
+            </div>
+            <div class="caja-info">
+                <h3>FORO</h3>
+                <img src="" alt="">
+                <a href="foro.html" class="caja-acceso">Agregar tema en el foro</a>
+            </div>
+            <div class="caja-info">
+                <h3>MI PERFIL</h3>
+                <img src="" alt="">
+                <a href="#" class="caja-acceso">Ver mi perfil</a>
+            </div>
+
+        </div>
+        <div class="calendario">
+            <h3>Calendario</h3>
+            aca va el calendario 
+        </div>
+    </div>
+        
     </main>
 
 
