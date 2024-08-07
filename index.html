@@ -5,8 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto talento tech - estudiantes</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(7,12,63,255);
+    width: 800px;
+    
+    
+}
+
+            a:link, a:visited{
+                background-color: rgba(7,12,63,255);
+                color: white;
+                border:2px solid white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-top: 10px;
+                margin-left: 1200px;
+                width: 100px;
+                
+                
+               
+               
+                
+                
+
+
+
+            }
+            a:hover, a:active{
+                background-color: rgba(7,12,63,255);
+                border:2px solid aqua;
+                color: aqua;
+                
+
+
+
+
+            }
+
+            .imagen{
+                width: 200px;
+                margin-top: auto;
+               
+                
+            }
+
+            .position{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+ }
+ .slider{
+    background-image: url(talentotech.jpg);
+    background-size: cover;
+    height: 70%;
+    width: 70%;
+    border-radius: 10px;
+    animation: animate 20s infinite;
+ }
+
+ @keyframes animate{
+
+    33%{ 
+        background-image: url(talentotech3.jpg);
+        background-size: cover;
+
+    }
+
+    66%{ 
+        background-image: url(talentotech.jpg);
+        background-size: cover;
+        
+    }
+
+    99%{ 
+        background-image: url(talentotech1.jpg);
+        background-size: cover;
+        
+    }
+
+
+ }
+
+    </style>
 </head>
 <body>
-    <h1>Acá va a ir el banner ppl</h1>
+    <a href="login.html" target="_blank"> Ingresar </a>
+    
+    <div>
+
+    <img src="logo.png" class="imagen">
+    </div>
+
+   
+
+    <div class="slider-container">
+        <div class="slider position"></div>
+
+    </div>
+
+
+
+
 </body>
 </html>
