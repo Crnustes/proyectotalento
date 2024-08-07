@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/img1.png') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+}
+
+.login {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(0, 40, 87, 0.9); /* Fondo del formulario */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login h1 {
+    color: #fff; /* Color del título */
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: right; /* Alinea los íconos al lado derecho */
+}
+
+.input-box input {
+    width: calc(100% - 40px); /* Ajusta el ancho para dejar espacio para el ícono */
+    padding: 10px 15px;
+    border: 2px solid #00bfff; /* Borde azul claro */
+    border-radius: 5px;
+    background: #fff; /* Fondo del input */
+    color: #000; /* Color del texto del input */
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Alinea el ícono al lado derecho */
+    transform: translateY(-50%);
+    color: #00bfff; /* Color del ícono */
+}
+
+.remenber-forgot {
+    margin-bottom: 20px;
+    color: #fff; /* Color del texto de recordar contraseña */
+}
+
+.remenber-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    display: flex; /* Coloca los botones uno al lado del otro */
+    justify-content: space-between; /* Espacio entre los botones */
+}
+
+.btn {
+    flex: 1; /* Los botones ocupan el mismo ancho */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #00bfff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px; /* Espacio entre los botones */
+}
+
+.btn:hover {
+    background: #0099cc; /* Color del botón al pasar el ratón */
+}
+
+.register-link {
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #00bfff; /* Color del enlace */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Subrayar enlace al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+    body {
+        background-size: 100% auto;
+    }
+    .login {
+        width: 95%;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+    body {
+        background-size: 100% auto;
+    }
+    .login {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1001px) {
+    body {
+        background-size: cover;
+    }
+    .login {
+        width: 420px;
+    }
+}

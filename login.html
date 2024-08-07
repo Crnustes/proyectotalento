@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css"> 
+    <title>Iniciar Sesión</title>
 </head>
 <body>
-    <h1>Aca va la informacion del login</h1>
+    <div class="login">
+        <form id="loginForm">
+            <h1>Iniciar Sesión</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+            <div class="remember-forgot" style="color: #ffffff; margin-bottom: 20px;">
+                
+                <a href="#" id="forgotPassword" style="color: #ffffff;">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn">Iniciar</button>
+                <button type="button" class="btn" id="cancelBtn">Cancelar</button>
+            </div>
+            <div class="register-link">
+                <p>¿No tienes cuenta? <a href="#" id="registerLink">Regístrate aquí</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>

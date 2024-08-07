@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto talento tech - estudiantes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            background-color: rgba(7, 12, 63, 255);
+        }
+        .menu_superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(7, 12, 63, 255);
+            
+            top: 0;
+            z-index: 1000;
+        }
+        .acceder a {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .acceder a:hover {
+            border-color: aqua;
+            color: aqua;
+        }
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            width: 300%;
+            margin: auto;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            width: 33.333%;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @keyframes slide {
+            0%, 30% { transform: translateX(0); }
+            33%, 63% { transform: translateX(-33.333%); }
+            66%, 100% { transform: translateX(-66.666%); }
+        }
+        .slider {
+            animation: slide 15s infinite;
+        }
+    </style>
 </head>
 <body>
-    <h1>Acá va a ir el banner ppl</h1>
+    <header class="menu_superior">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo"  width="50%"/></a>
+        </div>
+        <div class="acceder">
+            <a href="login.html" target="_blank">Ingresar</a>
+        </div>
+    </header>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="/images/talentotech.jpg" alt="Talento Tech 1" /></div>
+            <div class="slide"><img src="/images/talentotech1.jpg" alt="Talento Tech 2" /></div>
+            <div class="slide"><img src="/images/talentotech3.jpg" alt="Talento Tech 3" /></div>
+        </div>
+    </div>
 </body>
 </html>
