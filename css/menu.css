@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "top-menu top-menu"
+        "side-menu content";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 60px 1fr;
+    height: 100vh;
+}
+
+#top-menu {
+    grid-area: top-menu;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#logo {
+    height: 40px;
+}
+
+#logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#side-menu {
+    grid-area: side-menu;
+    background-color: #0C1247;
+    color: white;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+#side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#side-menu li {
+    padding: 10px 20px;
+}
+
+#side-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#side-menu i {
+    margin-right: 10px;
+}
+
+#content-area {
+    grid-area: content;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #0C1247;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "top-menu"
+            "content";
+        grid-template-columns: 1fr;
+    }
+
+    #side-menu {
+        position: fixed;
+        left: 0;
+        top: 60px;
+        bottom: 0;
+        width: 250px;
+        transform: translateX(-100%);
+        z-index: 1000;
+    }
+
+    #side-menu.active {
+        transform: translateX(0);
+    }
+
+    #menu-toggle {
+        display: block;
+        order: -1;  /* Esto asegura que el botón aparezca primero en el menú superior */
+    }
+
+    #content-area {
+        margin-left: 0;
+    }
+}

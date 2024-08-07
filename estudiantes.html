@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creacion de estudiantes</title>
+    <title>Estudiantes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
-    <h1>Acá van los estudiantes</h1>
+    <nav id="top-menu">
+        <button id="menu-toggle">☰</button>
+        <img src="logo.png" alt="Logo" id="logo">
+        <button id="logout-btn">Salir</button>
+    </nav>
+    
+    <nav id="side-menu">
+        <ul>
+            <li><a href="/dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="/estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+            <li><a href="/calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
+            <li><a href="/sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
+            <li><a href="/contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
+            <li><a href="/foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+        </ul>
+    </nav>
+    
+    <main id="content-area">
+        <h1>Área de trabajo</h1>
+        <p>Acá es donde tienen que trabajar su código ya que esto lo vamos a trabajar diferentes personas para cada una de las páginas</p>
+    </main>
+
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
