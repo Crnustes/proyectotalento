@@ -93,36 +93,39 @@ body {
     text-decoration: underline; /* Subrayar enlace al pasar el ratón */
 }
 
-/* Media Queries */
-    @media (max-width: 650px) {
-  body {
+@media (max-width: 650px) {
+    body {
         background-image: none; 
-        background-color: darkblue; 
+        background-color: darkblue;
     }
     .login {
         width: 95%;
-      
+       
     }
 }
 
 
 @media (min-width: 651px) and (max-width: 1000px) {
     body {
-        background-size: cover; 
+        background-image: url('../images/img1.png');
+        background-size: cover;
+        background-color: transparent; 
     }
     .login {
         width: 90%;
-       
+        
     }
 }
 
 
 @media (min-width: 1001px) {
     body {
-        background-size: cover;
+        background-image: url('../images/img1.png'); 
+        background-size: cover; 
+        background-color: transparent;
     }
     .login {
         width: 420px;
-        
+     
     }
 }
