@@ -94,29 +94,34 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 650px) {
+    @media (max-width: 650px) {
     body {
-        background-size: 100% auto;
+        background-size: contain;
     }
     .login {
         width: 95%;
+      
     }
 }
 
+
 @media (min-width: 651px) and (max-width: 1000px) {
     body {
-        background-size: 100% auto;
+        background-size: cover; 
     }
     .login {
         width: 90%;
+       
     }
 }
+
 
 @media (min-width: 1001px) {
     body {
         background-size: cover;
     }
     .login {
-        width: 420px;
-    }
+        width: 420px;
+        
+    }
 }
