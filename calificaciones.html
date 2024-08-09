@@ -6,7 +6,7 @@
     <title>calificaciones</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
     <nav id="top-menu">
@@ -17,20 +17,72 @@
     
     <nav id="side-menu">
         <ul>
-            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
-            <li><a href="calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
-            <li><a href="sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
-            <li><a href="contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
-            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="/dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="/estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+            <li><a href="/calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
+            <li><a href="/sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
+            <li><a href="/contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
+            <li><a href="/foro.html"><i class="fas fa-comments"></i> Foro</a></li>
         </ul>
     </nav>
     
     <main id="content-area">
-        <h1>Área de trabajo</h1>
-        <p>Acá es donde tienen que trabajar su código ya que esto lo vamos a trabajar diferentes personas para cada una de las páginas</p>
+        <form>
+            <div>
+                <select name="buscar" id="buscar">
+                    <option value="b0" selected>Selecciones El grupo a buscar</option>
+                    <option value="b1">G01</option>
+                    <option value="b2">G02</option>
+                    <option value="b3">G34</option>
+                </select>
+                <button type="submit" value="buscar" id="buscar">Buscar</button>
+            </div>
+            <div>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar por numero de cedula">
+                <button type="submit" value="buscar" id="buscar">Buscar</button>
+            </div>
+        </form>
+        <table border="2px" >
+            <thead>
+                <tr>
+                    <th>Nombre del Estudiante</th>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                    <th>Python</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Edgar Javier Vasquez Malavera</td>
+                    <td>100</td>
+                    <td>95</td>
+                    <td>98</td>
+                    <td>100</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
+                </tr>
+                <tr>
+                    <td>Leydi Acero</td>
+                    <td>100</td>
+                    <td>99</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
+                </tr>
+                <tr>
+                    <td>Santiago Colorado</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
+                </tr>
+            </tbody>
     </main>
-
 
     <script src="/js/main.js"></script>
 </body>
