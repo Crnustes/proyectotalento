@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/formestudiante.css">
+    <link rel="stylesheet" href="css/tabestudiante.css">
 </head>
 <body>
     <nav id="top-menu">
@@ -18,12 +19,12 @@
     
     <nav id="side-menu">
         <ul>
-            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
-            <li><a href="calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
-            <li><a href="sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
-            <li><a href="contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
-            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="/dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="/estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+            <li><a href="/calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
+            <li><a href="/sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
+            <li><a href="/contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
+            <li><a href="/foro.html"><i class="fas fa-comments"></i> Foro</a></li>
         </ul>
     </nav>
     
@@ -63,6 +64,56 @@
                 <button class="Registrar" type="submit" id="registro">Registrar</button>
             </div>
         </form>
+        <!--Esta espacio es para la consulta de los estudiantes ingresados-->
+        <form class="Buscar">
+            <div>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                <button type="submit" value="buscar" id="buscar">Buscar</button>
+            </div>
+        </form>
+        <table border="2px" >
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Telefono</th>
+                    <th>Correo Electronico</th>
+                    <th>Grupo</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Edgar Javier</td>
+                    <td>Vasquez Malavera</td>
+                    <td>3013057287</td>
+                    <td>ejvasquezm@gmail.com</td>
+                    <td>G34</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
+                    <!--<td><button><img src="iconos/icons8-editar-64 (5).png" alt="Editar"></button></td>
+                    <td><button><img src="iconos/icons8-eliminar-50.png" alt="Eliminar"></button></td>-->
+                </tr>
+                <tr>
+                    <td>Leydi</td>
+                    <td>Acero</td>
+                    <td>3121235670</td>
+                    <td>lacero@gmail.com</td>
+                    <td>G34</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
+                </tr>
+                <tr>
+                    <td>Santiago</td>
+                    <td>Colorado</td>
+                    <td>3152789081</td>
+                    <td>santicol@gmail.com</td>
+                    <td>G34</td>
+                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
+                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
 
