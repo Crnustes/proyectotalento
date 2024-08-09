@@ -96,7 +96,7 @@ body {
 @media (max-width: 650px) {
     body {
         background-image: none; 
-        background-color: rgba(0,40,87,255);
+        background-color:#00bfff;
     }
     .login {
         width: 95%;
