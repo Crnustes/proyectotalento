@@ -6,6 +6,9 @@
     <title>calificaciones</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/calificaciones.css">
 </head>
@@ -28,62 +31,92 @@
     </nav>
     
     <main id="content-area">
-        <form>
-            <div>
-                <select name="buscar" id="buscar">
-                    <option value="b0" selected>Selecciones El grupo a buscar</option>
-                    <option value="b1">G01</option>
-                    <option value="b2">G02</option>
-                    <option value="b3">G34</option>
-                </select>
-                <button type="submit" value="buscar" id="buscar">Buscar</button>
-            </div>
-            <div>
-                <input type="text" name="buscador" id="buscador" placeholder="Buscar por numero de cedula">
-                <button type="submit" value="buscar" id="buscar">Buscar</button>
-            </div>
-        </form>
-        <table border="2px" >
-            <thead>
-                <tr>
-                    <th>Nombre del Estudiante</th>
-                    <th>HTML</th>
-                    <th>CSS</th>
-                    <th>JavaScript</th>
-                    <th>Python</th>
-                    <th colspan="2">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Edgar Javier Vasquez Malavera</td>
-                    <td>100</td>
-                    <td>95</td>
-                    <td>98</td>
-                    <td>100</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
-                </tr>
-                <tr>
-                    <td>Leydi Acero</td>
-                    <td>100</td>
-                    <td>99</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
-                </tr>
-                <tr>
-                    <td>Santiago Colorado</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>98</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-actualizar-archivo-48.png" alt="Actualizar"></td>
-                </tr>
-            </tbody>
-    </main>
+        <div class="formulario">
+            <h1>Calificaciones</h1>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <select id="inputState" class="form-select">
+                        <option selected>Eliga el grupo a calificar</option>
+                        <option>G34</option>
+                        <option>G43</option>
+                        <option>G03</option>
+                        <option>G45</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-outline-primary">Mostar</button>
+                </div>
+                <div class="col-md-4">
+                    <select id="inputState" class="form-select">
+                        <option selected>Seleccione el area a calificar</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-outline-primary">Habilitar</button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre del Estudiante</th>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">JavaScript</th>
+                        <th scope="col">Python</th>
+                        <th scope="col" colspan="2">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Edgar Javier Vasquez Malavera</td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</button></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-floppy"></i>Guardar</button></tr>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Leydy Lorena Acdero Arias</td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</button></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-floppy"></i>Guardar</button></tr>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Cristian David Ñuñez Martinez</td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</button></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-floppy"></i>Guardar</button></tr>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Santiago Colorado</td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><input type="number" name="nota" id="nota" placeholder="Digite la nota"></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</button></td>
+                        <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-floppy"></i>Guardar</button></tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     <script src="/js/main.js"></script>
 </body>

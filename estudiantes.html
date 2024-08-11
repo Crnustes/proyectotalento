@@ -6,9 +6,11 @@
     <title>Estudiantes</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/formestudiante.css">
-    <link rel="stylesheet" href="css/tabestudiante.css">
 </head>
 <body>
     <nav id="top-menu">
@@ -29,91 +31,84 @@
     </nav>
     
     <main id="content-area">
-        <form>
-            <h1>Registro de Estudiante</h1>
-            <div>
-                <input type="text", name="nombrestudiante", id="nombrestudiante", placeholder="Digite el nombre">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <form class="formulario">
+                        <h1>Registro de Estudiante</h1>
+                        <div>
+                            <input type="text", name="nombrestudiante", id="nombrestudiante", placeholder="Digite el nombre">
+                        </div>
+                        <div>
+                            <input type="text", name="apellidosestudiante", id="apellidosestudiante", placeholder="Digite los apellidos">
+                        </div>
+                        <div>
+                            <select name="tipodocumento", id="tipodocumento">
+                                <option value="seleccion">Seleccione el tipo de documento</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="cc">Cedula de Ciudadanía</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number", name="tdocumento", id="documento", placeholder="Digite el numero del documento">
+                        </div> 
+                        <div>
+                            <select name="sexo", id="sexo">
+                                <option value="seleccion">Seleccione el sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number", name="numcelular", id="celular", placeholder="Digite el numero del celular">
+                        </div>    
+                        <div>
+                            <input type="email", name="correoelectronico", id="correo", placeholder="Digitele el correo electronico">
+                        </div>
+                        <div>
+                            <button type="submit" class="boton btn btn-outline-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <h1 class="titulo">Estudiantes</h1>
+                    <div>
+                        <form class="row d-flex" role="search">
+                            <div class="col-md-8">
+                                <input class="form-control me-2" type="search" placeholder="Buscar por numero de documento" aria-label="Search">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i>Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container">
+                        <table>
+                            <thead>
+                            <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellidos</th>
+                                    <th scope="col">Telefono</th>
+                                    <th scope="col">Correo Electronico</th>
+                                    <th scope="col">Grupo</th>
+                                    <th scope="col" colspan="2">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Edgar Javier</td>
+                                    <td>Vasquez Malavera</td>
+                                    <td>3013057287</td>
+                                    <td>ejvasquezm@gmail.com</td>
+                                    <td>G34</td>
+                                    <td><button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</button></td>
+                                    <td><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i>Eliminar</button></tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
             </div>
-            <div>
-                <input type="text", name="apellidosestudiante", id="apellidosestudiante", placeholder="Digite los apellidos">
-            </div>  
-            <div>
-                <select name="tipodocumento", id="tipodocumento">
-                    <option value="seleccion">Seleccione el tipo de documento</option>
-                    <option value="tarjeteidentidad">Tarjeta de Identidad</option>
-                    <option value="cedula">Cedula de Ciudadanía</option>
-                </select>
-            </div>
-            <div>
-                <input type="number", name="tdocumento", id="documento", placeholder="Digite el numero del documento">
-            </div>    
-            <div>
-                <select name="sexo", id="sexo">
-                    <option value="seleccion">Seleccione el sexo</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                </select>
-            </div>    
-            <div>
-                <input type="number", name="numcelular", id="celular", placeholder="Digite el numero del celular">
-            </div>    
-            <div>
-                <input type="email", name="correoelectronico", id="correo", placeholder="Digitele el correo electronico">
-            </div>
-            <div>
-                <button class="Registrar" type="submit" id="registro">Registrar</button>
-            </div>
-        </form>
-        <!--Esta espacio es para la consulta de los estudiantes ingresados-->
-        <form class="Buscar">
-            <div>
-                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
-                <button type="submit" value="buscar" id="buscar">Buscar</button>
-            </div>
-        </form>
-        <table border="2px" >
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Telefono</th>
-                    <th>Correo Electronico</th>
-                    <th>Grupo</th>
-                    <th colspan="2">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Edgar Javier</td>
-                    <td>Vasquez Malavera</td>
-                    <td>3013057287</td>
-                    <td>ejvasquezm@gmail.com</td>
-                    <td>G34</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
-                    <!--<td><button><img src="iconos/icons8-editar-64 (5).png" alt="Editar"></button></td>
-                    <td><button><img src="iconos/icons8-eliminar-50.png" alt="Eliminar"></button></td>-->
-                </tr>
-                <tr>
-                    <td>Leydi</td>
-                    <td>Acero</td>
-                    <td>3121235670</td>
-                    <td>lacero@gmail.com</td>
-                    <td>G34</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
-                </tr>
-                <tr>
-                    <td>Santiago</td>
-                    <td>Colorado</td>
-                    <td>3152789081</td>
-                    <td>santicol@gmail.com</td>
-                    <td>G34</td>
-                    <td><input type="image" src="iconos/icons8-editar-64 (5).png" alt="Editar"></td>
-                    <td><input type="image" src="iconos/icons8-eliminar-50.png" alt="Eliminar"></td>
-                </tr>
-            </tbody>
-        </table>
+        </div>
     </main>
 
 
