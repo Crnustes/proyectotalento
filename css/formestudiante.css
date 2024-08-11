@@ -1,30 +1,32 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    height: 800px;
-}
-
-form{
-    width: 300px;
+.formulario{
+    width: 70%;
     margin: auto;
-    background-color: #0C1247;
+    background-color: rgb(3, 3, 59);
     border-radius: 10px;
     padding: 10px 20px;
 }
+
 h1{
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
     color: white;
-    margin: 15px 0;
-    font-size: medium;
+    padding: 10px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+    padding: 10px;
 }
 input{
     width: 100%;
     height: 30px;
     padding: 2px 20px;
     margin: 8px 0;
-    background-color: #0C1247;
+    background-color: rgb(3, 3, 59);
     border: 1px solid rgb(12, 12, 189);
     border-radius: 5px;
     color: white;
@@ -36,14 +38,14 @@ select{
     height: 30px;
     padding: 2px 20px;
     margin: 8px 0;
-    background-color: #0C1247;
+    background-color: rgb(3, 3, 59);
     border-radius: 5px;
     border-color: rgb(12, 12, 189);
     color: white;
     box-sizing: border-box;
 }
 
-button{
+.boton{
     width: 100%;
     height: 50px;
     padding: 2px 40px;
@@ -52,5 +54,25 @@ button{
     background-color: rgb(12, 12, 189);
     color: white;
     border: 0px;
-    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgb(3, 3, 59);
+    color: white;
+    text-align: center;
+    /*font-size: medium;*/
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    text-align: left;
+    padding: 10px;
 }
