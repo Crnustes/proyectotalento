@@ -6,9 +6,10 @@
     <title>Foro</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
+
     <nav id="top-menu">
         <button id="menu-toggle">☰</button>
         <img src="logo.png" alt="Logo" id="logo">
@@ -17,39 +18,78 @@
     
     <nav id="side-menu">
         <ul>
-            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
-            <li><a href="calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
-            <li><a href="sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
-            <li><a href="contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
-            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="/dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="/estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+            <li><a href="/calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
+            <li><a href="/sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
+            <li><a href="/contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
+            <li><a href="/foro.html"><i class="fas fa-comments"></i> Foro</a></li>
         </ul>
     </nav>
     
     <main id="content-area">
         <h1>FORO DE DUDAS</h1>
-        <p> <strong> ¡Bienvenidos al corazón vibrante de nuestro bootcamp! </strong> <br>
+        <p><strong>¡Bienvenidos al corazón vibrante de nuestro bootcamp!</strong>
          Estamos emocionados de abrir este espacio para que compartas tus inquietudes y observaciones mientras navegamos juntos por esta emocionante aventura. Aquí, cada pregunta cuenta y cada idea tiene el potencial de iluminar el camino para todos. Si alguna duda te ha estado rondando o has notado algo que crees que podríamos mejorar, ¡este es el lugar para expresarlo! <br>
-        Además, si tienes la respuesta a alguna de las inquietudes que plantean tus compañeros, no dudes en contribuir. La colaboración y el intercambio de conocimientos son clave para nuestro éxito colectivo. Tu aporte no solo ayudará a resolver problemas, sino que también fortalecerá nuestra comunidad campista. <br> 
-         <strong> ¡Anímate a participar, a preguntar y a responder! </strong> Juntos, haremos de este bootcamp una experiencia aún más enriquecedora. </p> 
+         Además, si tienes la respuesta a alguna de las inquietudes que plantean tus compañeros, no dudes en contribuir. La colaboración y el intercambio de conocimientos son clave para nuestro éxito colectivo. Tu aporte no solo ayudará a resolver problemas, sino que también fortalecerá nuestra comunidad campista. <br>
+         <strong>¡Anímate a participar, a preguntar y a responder!</strong> Juntos, haremos de este bootcamp una experiencia aún más enriquecedora.</p> 
 
-           <div class="search-container">
-        <input type="text" id="search" placeholder="Curso que desea buscar...">
-        <button onclick="addDebate()">Añadir nuevo tema de debate</button>
-    </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Curso que desea buscar...">
+            <button onclick="addDebate()">Añadir nuevo tema de debate</button>
+            <i class="fas fa-search"></i> <!-- Ícono de lupa -->
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Debate</th>
-                <th>Grupo</th>
-                <th>Comenzado por</th>
-                <th>Último mensaje</th>
-            </tr>
-        </thead>
-
+        <div class="tabla">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Debate</th>
+                        <th scope="col">Grupo</th>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Comenzado por</th>
+                        <th scope="col">Último mensaje</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>G34</td>
+                        <td>Programación</td>
+                        <td>Jhon Calderon</td>
+                        <td>Inquietudes</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+                            <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>G101</td>
+                        <td>Habilidades de Poder</td>
+                        <td>Camila Lozano</td>
+                        <td>Pregunta</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+                            <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>G101</td>
+                        <td>Área de Formación Proyectos</td>
+                        <td>Sandra Rodriguez</td>
+                        <td>Duda</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+                            <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
-
 
     <script src="/js/main.js"></script>
 </body>
