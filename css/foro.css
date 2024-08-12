@@ -188,10 +188,7 @@ table tr:hover {
 
 /* Media Queries */
 @media (max-width: 650px) {
-    body {
-        background-image: none; 
-        background-color: #00bfff;
-    }
+    body }
     nav#side-menu {
         width: 100%;
         height: auto;
@@ -212,11 +209,7 @@ table tr:hover {
 }
 
 @media (min-width: 651px) and (max-width: 1000px) {
-    body {
-        background-image: url('../images/img1.png');
-        background-size: cover;
-        background-color: transparent; 
-    }
+    body 
     nav#side-menu {
         width: 200px;
         height: calc(100vh - 60px);
@@ -235,11 +228,7 @@ table tr:hover {
 }
 
 @media (min-width: 1001px) {
-    body {
-        background-image: url('../images/img1.png'); 
-        background-size: cover; 
-        background-color: transparent;
-    }
+    
     nav#side-menu {
         width: 250px;
     }
