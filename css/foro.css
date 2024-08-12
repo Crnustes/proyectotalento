@@ -67,6 +67,6 @@ body {
         justify-content: flex-end;
     }
     .search-container input[type="text"] {
-        width: 300px; /* Ajusta el ancho según sea necesario */
+        width: 900px; /* Ajusta el ancho según sea necesario */
     }
 }
