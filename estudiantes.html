@@ -21,19 +21,19 @@
     
     <nav id="side-menu">
         <ul>
-            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
-            <li><a href="calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
-            <li><a href="sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
-            <li><a href="contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
-            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="/dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="/estudiantes.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+            <li><a href="/calificaciones.html"><i class="fas fa-clipboard-list"></i> Calificaciones</a></li>
+            <li><a href="/sesiones.html"><i class="fas fa-calendar-alt"></i> Sesiones</a></li>
+            <li><a href="/contenido.html"><i class="fas fa-book"></i> Contenido</a></li>
+            <li><a href="/foro.html"><i class="fas fa-comments"></i> Foro</a></li>
         </ul>
     </nav>
     
     <main id="content-area">
         <div class="container">
-            <div class="row g-3">
-                <div class="col-md-5">
+            <div>
+                <!--<div class="col-md-4">-->
                     <form class="formulario">
                         <h1>Registro de Estudiante</h1>
                         <div>
@@ -65,13 +65,14 @@
                         <div>
                             <input type="email", name="correoelectronico", id="correo", placeholder="Digitele el correo electronico">
                         </div>
-                        <div>
-                            <button type="submit" class="boton btn btn-outline-primary">Registrar</button>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="boton btn btn-outline-primary btn-lg">Registrar</button>
                         </div>
                     </form>
-                </div>
-                <div class="col-md-7">
-                    <h1 class="titulo">Estudiantes</h1>
+                <!--</div>-->
+            </div>    
+                <div>
+                    <h1 class="titulo">Consultar Estudiante</h1>
                     <div>
                         <form class="row d-flex" role="search">
                             <div class="col-md-8">
@@ -107,7 +108,7 @@
                             </tbody>
                         </table>
                 </div>
-            </div>
+            <!--</div>-->
         </div>
     </main>
 
