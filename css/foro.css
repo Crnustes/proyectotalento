@@ -185,14 +185,15 @@ table tr:hover {
 .btn-outline-primary i, .btn-outline-danger i {
     margin-right: 5px;
 }
-
-/* Media Queries */
 @media (max-width: 650px) {
-    body }
+   
     nav#side-menu {
         width: 100%;
         height: auto;
         top: 60px; /* Mantiene la posición del menú superior */
+        position: fixed;
+        /* Asegura que el menú lateral esté sobre el contenido */
+        z-index: 1000;
     }
     main#content-area {
         margin-left: 0;
@@ -209,10 +210,12 @@ table tr:hover {
 }
 
 @media (min-width: 651px) and (max-width: 1000px) {
-    body 
+   
     nav#side-menu {
         width: 200px;
         height: calc(100vh - 60px);
+        position: fixed;
+        top: 60px; /* Mantiene la posición del menú superior */
     }
     main#content-area {
         margin-left: 220px;
@@ -228,9 +231,11 @@ table tr:hover {
 }
 
 @media (min-width: 1001px) {
-    
     nav#side-menu {
         width: 250px;
+        position: fixed;
+        top: 60px; /* Mantiene la posición del menú superior */
+        height: calc(100vh - 60px);
     }
     main#content-area {
         margin-left: 270px;
@@ -241,6 +246,6 @@ table tr:hover {
         justify-content: flex-end;
     }
     .search-container input[type="text"] {
-        width: 300px;
+        width: 300px; /* Ajusta el ancho según sea necesario */
     }
 }
