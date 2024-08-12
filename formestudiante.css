@@ -1,0 +1,79 @@
+.formulario{
+    width: 100%;
+    margin: auto;
+    /*background-color: rgb(3, 3, 59);*/
+    border: 2px solid #0C1247;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+    padding: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    padding: 2px 20px;
+    margin: 8px 0;
+    /*background-color: rgb(3, 3, 59);*/
+    border: 1px solid rgb(84, 153, 199);
+    border-radius: 5px;
+    /*color: white;*/
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    height: 30px;
+    padding: 2px 20px;
+    margin: 8px 0;
+    /*background-color: rgb(3, 3, 59);*/
+    border-radius: 5px;
+    border-color: rgb(84, 153, 199);
+    /*color: black;*/
+    box-sizing: border-box;
+}
+
+/*.boton{
+    width: 100%;
+    height: 50px;
+    padding: 2px 40px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: rgb(12, 12, 189);
+    color: white;
+    border: 0px;
+}*/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #0C1247;
+    color: white;
+    text-align: center;
+    /*font-size: medium;*/
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    text-align: left;
+    padding: 10px;
+}
