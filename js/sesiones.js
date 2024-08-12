@@ -29,7 +29,7 @@ function renderSessions() {
         li.innerHTML = `
             <span>${session.date} ${session.time} - ${session.title}</span>
             <div>
-                <button onclick="editSession('${session.id}')">Editar</button>
+                <button onclick="editSession('${session.id}')"><i class="bi bi-pencil-square">Editar</button>
                 <button onclick="deleteSession('${session.id}')">Eliminar</button>
                 ${new Date(session.date + 'T' + session.time) < new Date() 
                     ? `<button onclick="showVideo('${session.id}')">Ver Video</button>`
