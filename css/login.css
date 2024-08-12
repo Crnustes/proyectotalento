@@ -95,7 +95,7 @@ body {
 
 @media (max-width: 650px) {
     body {
-        background-image: none; 
+         background-image: url('../images/pq.jpg');; 
         background-color:#00bfff;
     }
     .login {
@@ -107,7 +107,7 @@ body {
 
 @media (min-width: 651px) and (max-width: 1000px) {
     body {
-        background-image: url('../images/img1.png');
+        background-image: url('../images/med.jpg');
         background-size: cover;
         background-color: transparent; 
     }
