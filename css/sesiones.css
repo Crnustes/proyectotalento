@@ -1,0 +1,39 @@
+:root {
+    --dark-blue: #1a2a3a;
+    --light-blue: #3a4a5a;
+    --accent-color: #4e9af1;
+}
+body {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-color: var(--light-blue);
+}
+.card {
+    background-color: var(--light-blue);
+    border: none;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.btn-primary:hover {
+    background-color: #3d8ae0;
+    border-color: #3d8ae0;
+}
+.modal-content {
+    background-color: var(--light-blue);
+    color: #ffffff;
+}
+.footer {
+    background-color: var(--light-blue);
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
