@@ -59,7 +59,7 @@ body {
         height: calc(100vh - 60px);
     }
     main#content-area {
-        margin-left: 270px;
+        margin-left: 200px;
         padding: 20px;
     }
     .search-container {
