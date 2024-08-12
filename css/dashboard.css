@@ -12,8 +12,9 @@
 }
 .caja-info{
     width: 150px;
+    height: 200px;
     background: #0C1247;
-    margin: 3px;
+    margin: 10px;
     color: #ffffff;
     padding: 30px;
     border-radius: 15px;
