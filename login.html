@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/login.css"> 
+    <link rel="stylesheet" href="css/bot.css">
     <title>Iniciar Sesión</title>
 </head>
 <body>
@@ -31,21 +32,24 @@
                 <p>¿No tienes cuenta? <a href="#" id="registerLink">Regístrate aquí</a></p>
             </div>
         </form>
+        
     </div>
     <button id="chat-button"> <img src="images/chat.png" alt="" width="60px"></button>
-    <div id="chat-container">
-        <div id="chat-header">Chat con IA</div>
-        <div id="chat-messages">
-            <div class="bot-message">
-                <img src="images/bot.png" alt="IA Avatar" style="width: 150px; height: auto; border-radius: 50%;">
-                <p>¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+        <div id="chat-container">
+            <div id="chat-header">Chat con IA</div>
+            <div id="chat-messages">
+                <div class="bot-message">
+                    <img src="images/bot.png" alt="IA Avatar" style="width: 150px; height: auto; border-radius: 50%;">
+                    <p>¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+                </div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button onclick="sendMessage()">Enviar</button>
             </div>
         </div>
-        <div id="chat-input">
-            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
-            <button onclick="sendMessage()">Enviar</button>
-        </div>
-    </div>
+   
     <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
