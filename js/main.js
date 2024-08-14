@@ -10,17 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         window.location.href = 'login.html';
     });
 
-    // Navegación del menú lateral
-    // menuItems.forEach(item => {
-    //     item.addEventListener('click', (e) => {
-    //         e.preventDefault();
-    //         const page = e.currentTarget.getAttribute('href').substring(1);
-            
-    //         if (window.innerWidth <= 768) {
-    //             sideMenu.classList.remove('active');
-    //         }
-    //     });
-    // });
+   
 
     // Funcionalidad del botón de menú en responsive
     menuToggle.addEventListener('click', () => {
@@ -40,4 +30,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
             sideMenu.classList.remove('active');
         }
     });
+});
+
+const chatButton = document.getElementById('chat-button');
+const chatContainer = document.getElementById('chat-container');
+const chatMessages = document.getElementById('chat-messages');
+const userInput = document.getElementById('user-input');
+
+chatButton.addEventListener('click', () => {
+    chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
+});
+
+function sendMessage() {
+    const message = userInput.value.trim();
+    if (message) {
+        addMessage('user', message);
+        userInput.value = '';
+        setTimeout(() => {
+            addMessage('bot', '¡Hola! Gracias por tu mensaje.');
+        }, 1000);
+    }
+}
+
+function addMessage(sender, text) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = sender === 'user' ? 'user-message' : 'bot-message';
+    messageDiv.innerText = text;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+userInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
 });
