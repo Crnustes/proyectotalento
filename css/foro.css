@@ -11,6 +11,24 @@ body {
     text-align: left; 
   }
 
+.search-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+#search {
+  flex: 1; 
+  padding: 8px;
+}
+
+.btn {
+  margin-left: 10px; /
+}
+
+.col-md-4 {
+  margin-left: 10px; 
+}
 @media (max-width: 650px) {
    
     nav#side-menu {
@@ -64,7 +82,7 @@ body {
         height: calc(100vh - 60px);
     }
     main#content-area {
-        margin-left: 50px;
+        margin-left: 70px;
         padding: 20px;
     }
     .search-container {
