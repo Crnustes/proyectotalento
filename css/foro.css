@@ -6,7 +6,7 @@ body {
     }
 
 .table thead th {
-    background-color:und: #0; 
+    background-color:rgba(7,12,63,255); 
     color: #ffffff;
     text-align: left; 
   }
@@ -64,7 +64,7 @@ body {
         height: calc(100vh - 60px);
     }
     main#content-area {
-        margin-left: 15px;
+        margin-left: 50px;
         padding: 20px;
     }
     .search-container {
