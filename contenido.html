@@ -1,240 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/menu.css" />
     <style>
-      
-            
-        
-        .material{
-          
-            height: 300px;
-            margin-top: 5px;
+      .material {
+        height: 300px;
+        margin-top: 5px;
+      }
+
+      .estudiantes {
+        margin-left: 30px;
+      }
+
+      .calificaciones {
+        margin-left: 30px;
+      }
+      .sesiones {
+        margin-left: 30px;
+      }
+
+      .contenido {
+        margin-left: 30px;
+      }
+      .foro {
+        margin-right: 50px;
+      }
+      .pdf {
+        margin-left: 700px;
+        width: 200px;
+        height: 60px;
+      }
+      .pdf2 {
+        margin-left: 700px;
+      }
+
+      .search {
+        margin-right: 50px;
+      }
+      .pdf3 {
+        margin-left: 700px;
+      }
+      .pdf4 {
+        margin-left: 700px;
+      }
+      .pdf5 {
+        margin-left: 700px;
+      }
+      .pdf6 {
+        margin-left: 700px;
+      }
+      .pdf7 {
+        margin-left: 700px;
+      }
+
+      .contenedor {
+        display: flex;
+      }
+      .contenedor1 {
+        width: 1350px;
+      }
+
+      .contenedor2 {
+        width: 1350px;
+      }
+
+      @media (max-width: 650px) {
+        .contenedor1 {
+          width: 350px;
         }
 
-       
-        .estudiantes{
-          margin-left: 30px;
-          
+        .contenedor {
+          display: block;
         }
 
-        .calificaciones{
-          margin-left: 30px;
+        .contenedor2 {
+          width: 350px;
         }
-        .sesiones{
-          margin-left: 30px;
-        }
-
-        .contenido{
-          margin-left: 30px;
-        }
-        .foro{
-          margin-right: 50px;
-        }
-        .pdf{
-          margin-left: 700px;
-          width: 200px;
-          height: 60px;
-          
-
-        }
-        .pdf2{
-          margin-left: 700px;
-        }
-
-
-        .search{
-          margin-right: 50px;
-        }
-        .pdf3{
-          margin-left: 700px;
-        }
-        .pdf4{
-          margin-left: 700px;
-
-
-        }
-        .pdf5{
-          margin-left: 700px;
-
-
-        }
-        .pdf6{
-          margin-left: 700px;
-
-
-        }
-        .pdf7{
-          margin-left: 700px;
-
-
-        }
-
-        .contenedor{
-          display: flex;
-          
-          
-
-        }
-        .contenedor1{
-          width: 1350px;
-        }
-
-        .contenedor2{
-          width: 1350px;
-        }
-
-        @media ( max-width:650px) {
-
-.contenedor1{
-  width: 350px;
-
-}
-
-.contenedor{
- display: block;
-}
-
-.contenedor2{
-  width: 350px;
-}
-}
-        
-        
-
-
-        
-
-       
+      }
     </style>
-</head>
-<body>
-  <div class="contenedor1">
-
-
-    <div class="contenedor2">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <div class="estudiantes">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Estudiantes</a>
-              </li>
-              </div>
-              <div class="calificaciones">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Calificaciones</a>
-              </li>
-              </div>
-              <div class="sesiones">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sesiones</a>
-              </li>
-              </div>
-              
-              <div class="contenido">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contenido</a>
-              </li>
-              </div>
-              <div class="foro">
-              <li class="nav-item">
-                <div class="botton"><a class="nav-link" href="#">Foro</a></div>
-              </li>
-              </div>
-              <br>
-
-              <div class="search">
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-              
-            </form>
-            </div>
-          </div>
-          
+  </head>
+  <body>
+    <nav id="top-menu">
+      <button id="menu-toggle">☰</button>
+      <img src="images/logo.png" alt="Logo" id="logo" />
+      <div class="news-slider">
+        <div class="news-content">
+          <span style="color: red; font-weight: 700">17 DE AGOSTO /</span>
+          Recuerda que tenemos proximamente el evento de empleabilidad, este
+          evento tendremos invitados especiales -
+          <span style="color: red; font-weight: 700">19 DE AGOSTO /</span> Lunes
+          festivo, celebramos el Día de la Asunción de la Virgen María -
+          <span style="color: red; font-weight: 700">22 DE AGOSTO /</span>
+          Reunion para actividades proximas y entrega de cronograma de
+          actividades con los estudiantes -
+          <span style="color: red; font-weight: 700">09 DE AGOSTO /</span>
+          Finalizacion de actividades con grupo 1001 navegantes
         </div>
-      </nav>
       </div>
-    
-    
+      <button id="logout-btn">Salir</button>
+    </nav>
 
-    <div class="material">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+    <nav id="side-menu">
+      <ul>
+        <li>
+          <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="estudiantes.html"
+            ><i class="fas fa-user-graduate"></i> Estudiantes</a
+          >
+        </li>
+        <li>
+          <a href="calificaciones.html"
+            ><i class="fas fa-clipboard-list"></i> Calificaciones</a
+          >
+        </li>
+        <li>
+          <a href="sesiones.html"
+            ><i class="fas fa-calendar-alt"></i> Sesiones</a
+          >
+        </li>
+        <li>
+          <a href="contenido.html"><i class="fas fa-book"></i> Contenido</a>
+        </li>
+        <li>
+          <a href="foro.html"><i class="fas fa-comments"></i> Foro</a>
+        </li>
+      </ul>
+      <div class="footer">
+        <div class="info-footer">
+          <p>
+            Todos los derechos reservados - Pagina realizada por: Edgar - Lorena
+            - Santiago - Cristian
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content-area">
+      <div class="contenedor1">
+        <div class="material">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
                   Material de clase #1
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+              >
                 <div class="accordion-body">
-                  <H5> HTML</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>HTML</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Material de clase #2
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Material de clase #2
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> CSS</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>CSS</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf2">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Material de clase #3
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Material de clase #3
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> Java</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>Java</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf3">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Material de clase #4
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Material de clase #4
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> Bootstrap</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>Bootstrap</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf4">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
@@ -242,17 +290,33 @@
 
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Material de clase #5
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Material de clase #5
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> Python</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>Python</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf5">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
@@ -260,34 +324,66 @@
 
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Material de clase #6
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Material de clase #6
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> English code</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>English code</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf6">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Material de clase #7
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Material de clase #7
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse"
+              >
                 <div class="accordion-body">
-                  <H5> Proyectos</H5>
-                  <br>
-                  <p>En este espacio puedes encontrar la tematica vista en clase. Por lo tanto puedes hacer click en ingresar para ver tu material de clase.</p>
+                  <h5>Proyectos</h5>
+                  <br />
+                  <p>
+                    En este espacio puedes encontrar la tematica vista en clase.
+                    Por lo tanto puedes hacer click en ingresar para ver tu
+                    material de clase.
+                  </p>
                   <div class="pdf7">
-                  <button type="button" class="btn btn-outline-info">Ingresar</button>
+                    <button type="button" class="btn btn-outline-info">
+                      Ingresar
+                    </button>
                   </div>
                 </div>
               </div>
@@ -295,58 +391,57 @@
           </div>
 
           <div class="contenedor">
-
-          <div class="card" style="width: 18rem;">
-            <img src="images/h.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Video Indroductorio HTML</h5>
-              <p class="card-text">Puedes ver un video corto para mejor tu conocimiento del tema.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+            <div class="card" style="width: 18rem">
+              <img src="images/h.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Video Indroductorio HTML</h5>
+                <p class="card-text">
+                  Puedes ver un video corto para mejor tu conocimiento del tema.
+                </p>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
             </div>
-            
-          </div>
-          
+
             <div class="css">
-
-          <div class="card" style="width: 18rem;">
-            <img src="images/cs.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Video Indroductorio CSS</h5>
-              <p class="card-text">Puedes ver un video corto para mejor tu conocimiento del tema.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <div class="card" style="width: 18rem">
+                <img src="images/cs.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Video Indroductorio CSS</h5>
+                  <p class="card-text">
+                    Puedes ver un video corto para mejor tu conocimiento del
+                    tema.
+                  </p>
+                  <a href="#" class="btn btn-primary">Ver</a>
+                </div>
+              </div>
             </div>
 
-          </div>
-          </div>
-          
+            <div class="card" style="width: 18rem">
+              <img src="images/j.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Video Indroductorio Java</h5>
+                <p class="card-text">
+                  Puedes ver un video corto para mejor tu conocimiento del tema.
+                </p>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="images/j.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Video Indroductorio Java</h5>
-              <p class="card-text">Puedes ver un video corto para mejor tu conocimiento del tema.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+            <div class="card" style="width: 18rem">
+              <img src="images/bo.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Video Indroductorio Bootstrap</h5>
+                <p class="card-text">
+                  Puedes ver un video corto para mejor tu conocimiento del tema.
+                </p>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </main>
 
-          <div class="card" style="width: 18rem;">
-            <img src="images/bo.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Video Indroductorio Bootstrap</h5>
-              <p class="card-text">Puedes ver un video corto para mejor tu conocimiento del tema.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-          </div>
-
-          </div>
-
-    </div>
-    </div>
-    
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-    
-   
-    
-   

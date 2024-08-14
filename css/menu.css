@@ -149,4 +149,6 @@ body {
     display: flex;
     align-items: flex-end;
     padding: 0px 10px;
+    font-size: 12px;
+    
 }
