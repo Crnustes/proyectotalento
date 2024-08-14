@@ -9,7 +9,8 @@ body {
 .table thead th {
     background-color: #003366; 
     color: #ffffff;
-    text-align: center; 
+    text-align: left; 
+  }
 
 @media (max-width: 650px) {
    
