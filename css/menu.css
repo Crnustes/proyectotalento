@@ -140,17 +140,13 @@ body {
     .news-content{
         display: none;
     }
-    /* .news-bar {
-        flex-direction: column;
-        top: auto;
-        bottom: 0;
-    }
     
-    .news-slider {
-        width: 100%;
-        margin: 10px 0;
-        flex-direction: column;
-        top: auto;
-        bottom: 0;
-    } */
+}
+
+.footer{
+    height: 67%;
+    
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 10px;
 }
