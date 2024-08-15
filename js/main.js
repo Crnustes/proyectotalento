@@ -36,6 +36,8 @@ const chatButton = document.getElementById('chat-button');
 const chatContainer = document.getElementById('chat-container');
 const chatMessages = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
+let userName = '';
+let isAskingName = true;
 
 chatButton.addEventListener('click', () => {
     chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
@@ -46,9 +48,18 @@ function sendMessage() {
     if (message) {
         addMessage('user', message);
         userInput.value = '';
-        setTimeout(() => {
-            addMessage('bot', '¡Hola! Gracias por tu mensaje.');
-        }, 1000);
+        
+        if (isAskingName) {
+            userName = message;
+            isAskingName = false;
+            setTimeout(() => {
+                addMessage('bot', `¡Hola ${userName}! ¿En qué te puedo ayudar?`);
+            }, 1000);
+        } else {
+            setTimeout(() => {
+                addMessage('bot', `${userName}, gracias por tu mensaje. ¿En qué más puedo ayudarte?`);
+            }, 1000);
+        }
     }
 }
 
