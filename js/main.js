@@ -76,3 +76,37 @@ userInput.addEventListener('keypress', (e) => {
         sendMessage();
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const avatarUpload = document.getElementById('avatar-upload');
+    const profileImage = document.getElementById('profile-image');
+    const editBtn = document.querySelector('.edit-btn');
+    const infoInputs = document.querySelectorAll('.info-item input');
+
+    avatarUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                profileImage.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    editBtn.addEventListener('click', () => {
+        if (editBtn.textContent === 'Editar Perfil') {
+            infoInputs.forEach(input => {
+                input.readOnly = false;
+                input.style.backgroundColor = '#fff';
+            });
+            editBtn.textContent = 'Guardar Cambios';
+        } else {
+            infoInputs.forEach(input => {
+                input.readOnly = true;
+                input.style.backgroundColor = 'transparent';
+            });
+            editBtn.textContent = 'Editar Perfil';
+        }
+    });
+});

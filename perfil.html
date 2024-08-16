@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/sesiones.css">
+    <link rel="stylesheet" href="css/perfil.css">
 
     <style>
         
@@ -40,6 +41,7 @@
             <li><a href="perfil.html"><i class="fas fa-user"></i> Perfil</a></li>
         </ul>
         <div class="footer">
+            
             <div class="info-footer">
                 <p>Todos los derechos reservados - Pagina realizada por: Edgar - Lorena - Santiago  - Cristian </p>
             </div>
@@ -49,60 +51,32 @@
     
     <main id="content-area" >
         
-        <h1>Bienvenidos</h1>
-        <div class="content-area-dashboard">
-        <div class="informacion-dashboard">
-            <div class="caja-info">
-                <h3>ESTUDIANTES</h3> 
-                <i class="fas fa-home"> </i><br>
-                <a href="estudiantes.html" class="caja-acceso"> Agregar estudiantes</a>
-            </div>
-            <div class="caja-info">
-                <h3>CALIFICACIONES</h3>
-                <i class="fas fa-clipboard-list"></i><br>
-                <a href="calificaciones.html" class="caja-acceso">agregar calificaciones</a>
-            </div>
-            <div class="caja-info">
-                <h3>SESIONES</h3>
-                <i class="fas fa-calendar-alt"></i><br>
-                <a href="sesiones.html" class="caja-acceso">Agregar sesiones</a>
-            </div>
-            <div class="caja-info">
-                <h3>CONTENIDO</h3>
-                <i class="fas fa-book"></i><br>
-                <a href="contenido.html" class="caja-acceso">Agregar contenido</a>
-            </div>
-            <div class="caja-info">
-                <h3>FORO</h3>
-                <i class="fas fa-comments"></i><br>
-                <a href="foro.html" class="caja-acceso">Agregar tema en el foro</a>
-            </div>
-            <div class="caja-info">
-                <h3>MI PERFIL</h3>
-                <i class="fa fa-user"></i></i><br>
-                <a href="perfil.html" class="caja-acceso">Ver mi perfil</a>
-            </div>
-
-        </div>
-        <div class="calendario">
-            <h1>Calendario de Sesiones</h1>
-        
-            <div class="content-wrapper">
-                <div id="calendar-controls" class="card">
-                    <select id="month-select"></select>
-                    <select id="year-select"></select>
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <img src="images/perfil.png" alt="Foto de perfil" id="profile-image">
+                    <div class="avatar-overlay">
+                        <i class="fas fa-camera"></i>
+                        <input type="file" id="avatar-upload" accept="image/*">
+                    </div>
                 </div>
-                
-                <div id="calendar" class="card"></div>
+                <h1 class="profile-name">Edgar - Lorena - Santiago  - Cristian</h1>
             </div>
-        </div>
-    
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close">&times;</span>
-                <div id="popup-content"></div>
+            <div class="profile-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" value="nosotros.talentotech@usa.edu.co" readonly>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" value="+1234567890" readonly>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" value="Tunja, Colombía" readonly>
+                </div>
             </div>
-            
+            <button class="edit-btn">Editar Perfil</button>
         </div>
     
         
