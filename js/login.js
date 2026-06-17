@@ -1,18 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     const cancelBtn = document.getElementById('cancelBtn');
-    const forgotPassword = document.getElementById('forgotPassword');
+    const olvidóContraseña = document.getElementById('olvidadoContraseña');
     const registerLink = document.getElementById('registerLink');
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        
-        
-        if (username === 'adm' && password === '1234') {
-            window.location.href = './dashboard';
+
+        const nombreUsuario = document.getElementById('nombre usuario').value;
+        const contraseña = document.getElementById('contraseña').value;
+
+        if (nombreUsuario === 'almirante' && contraseña === '1234') {
             window.location.href = './dashboard.html';
         } else {
             alert('Usuario o contraseña incorrectos.');
@@ -23,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loginForm.reset();
     });
 
-    forgotPassword.addEventListener('click', function(event) {
+    olvidóContraseña.addEventListener('click', function(event) {
         event.preventDefault();
         alert('Funcionalidad de recuperación de contraseña no implementada.');
     });
