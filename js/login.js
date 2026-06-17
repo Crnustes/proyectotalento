@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Asegúrate de que los IDs coincidan exactamente con tu archivo HTML
         const nombreUsuario = document.getElementById('nombre usuario').value;
         const contraseña = document.getElementById('contraseña').value;
 
